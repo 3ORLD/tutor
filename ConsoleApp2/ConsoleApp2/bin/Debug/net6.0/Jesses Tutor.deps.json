@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Jesses Tutor/1.0.0": {
+        "runtime": {
+          "Jesses Tutor.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Jesses Tutor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

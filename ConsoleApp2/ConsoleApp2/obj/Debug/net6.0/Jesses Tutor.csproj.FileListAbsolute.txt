@@ -1,0 +1,15 @@
+C:\Users\Computing\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\Jesses Tutor.csproj.AssemblyReference.cache
+C:\Users\Computing\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\Jesses Tutor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Computing\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\Jesses Tutor.AssemblyInfoInputs.cache
+C:\Users\Computing\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\Jesses Tutor.AssemblyInfo.cs
+C:\Users\Computing\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\Jesses Tutor.csproj.CoreCompileInputs.cache
+C:\Users\Computing\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\net6.0\Jesses Tutor.exe
+C:\Users\Computing\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\net6.0\Jesses Tutor.deps.json
+C:\Users\Computing\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\net6.0\Jesses Tutor.runtimeconfig.json
+C:\Users\Computing\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\net6.0\Jesses Tutor.dll
+C:\Users\Computing\source\repos\ConsoleApp2\ConsoleApp2\bin\Debug\net6.0\Jesses Tutor.pdb
+C:\Users\Computing\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\Jesses Tutor.dll
+C:\Users\Computing\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\refint\Jesses Tutor.dll
+C:\Users\Computing\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\Jesses Tutor.pdb
+C:\Users\Computing\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\Jesses Tutor.genruntimeconfig.cache
+C:\Users\Computing\source\repos\ConsoleApp2\ConsoleApp2\obj\Debug\net6.0\ref\Jesses Tutor.dll
