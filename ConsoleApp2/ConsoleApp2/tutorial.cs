@@ -16,7 +16,7 @@ namespace ConsoleApp2
             Console.WriteLine("2. To challenge yourself, choose 'Deal 5 cards' option to generate a math problem with 3 numbers and 2 Maths Signs.");
             Console.WriteLine("3. Enter your answer to the problem.");
             Console.WriteLine("4. The application will tell you if your answer is correct or not.");
-            Console.WriteLine("5. Choose 'Quit' to exit the application.");
+            Console.WriteLine("5. Choose 'Quit' to exit the application and save your progress.");
         }
     }
 
