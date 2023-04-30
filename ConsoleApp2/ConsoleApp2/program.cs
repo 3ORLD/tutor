@@ -1,6 +1,5 @@
 using ConsoleApp2;
 using System;
-using System.Diagnostics;
 using System.IO;
 
 class Program
@@ -12,6 +11,8 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("Welcome to MathsTutor!");
+
+        Statistics stats = new Statistics();
 
         bool keepRunning = true;
         while (keepRunning)
@@ -30,10 +31,10 @@ class Program
                     Tutorial.ShowInstructions();
                     break;
                 case 2:
-                    DealThreeCards();
+                    DealThreeCards(stats);
                     break;
                 case 3:
-                    DealFiveCards();
+                    DealFiveCards(stats);
                     break;
                 case 4:
                     keepRunning = false;
@@ -44,15 +45,24 @@ class Program
             }
         }
 
+        WriteStatisticsToFile(stats);
 
         Console.WriteLine("\nGoodbye!");
     }
 
-    private static void DealThreeCards()
+    private static void WriteStatisticsToFile(Statistics stats)
     {
-
+        using (StreamWriter file = new StreamWriter(statisticsFilePath, true))
         {
-            Pack pack = new Pack();
+            file.WriteLine($"Questions answered: {stats.QuestionsAnswered}");
+            file.WriteLine($"Correct answers: {stats.CorrectAnswers}");
+            file.WriteLine($"Incorrect answers: {stats.IncorrectAnswers}");
+        }
+    }
+
+    private static void DealThreeCards(Statistics stats)
+    {
+           Pack pack = new Pack();
             Card card1 = pack.DrawCard();
             Card card2 = pack.DrawCard();
             Card card3 = pack.DrawCard();
@@ -68,15 +78,19 @@ class Program
             if (Math.Abs(answer - correctAnswer) < 0.001)
             {
                 Console.WriteLine("Correct!");
+                stats.CorrectAnswers++;
             }
             else
             {
                 Console.WriteLine($"Incorrect. The correct answer is {correctAnswer}.");
+                stats.IncorrectAnswers++;
+
             }
-        }
+            stats.QuestionsAnswered++;
+       
     }
 
-    private static void DealFiveCards()
+    private static void DealFiveCards(Statistics stats)
     {
         Pack pack = new Pack();
         Card card1 = pack.DrawCard();
@@ -94,19 +108,19 @@ class Program
 
         double correctAnswer = CalculateBODMASAnswer(card1.Value, card3.Value, card5.Value, operatorChar1, operatorChar2);
 
+
         if (Math.Abs(answer - correctAnswer) < 0.001)
         {
             Console.WriteLine("Correct!");
-
+            stats.CorrectAnswers++;
         }
         else
         {
             Console.WriteLine($"Incorrect. The correct answer is {correctAnswer}.");
-
+            stats.IncorrectAnswers++;
         }
+        stats.QuestionsAnswered++;
     }
-
-    // Existing code for GetOperatorFromSuit and CalculateAnswer
 
     private static double CalculateBODMASAnswer(int value1, int value2, int value3, char operatorChar1, char operatorChar2)
     {
@@ -147,6 +161,16 @@ class Program
     }
 }
 
+class Statistics
+{
+    public int QuestionsAnswered { get; set; }
+    public int CorrectAnswers { get; set; }
+    public int IncorrectAnswers { get; set; }
 
-
-
+    public Statistics()
+    {
+        QuestionsAnswered = 0;
+        CorrectAnswers = 0;
+        IncorrectAnswers = 0;
+    }
+}
